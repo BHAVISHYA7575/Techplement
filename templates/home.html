@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Display welcome message with the logged-in user's name -->
+    <h2>Welcome, {{ username }}!</h2>
+    
+    <!-- A message confirming the login status -->
+    <p>You are successfully logged in.</p>
+
+    <!-- Link to log out -->
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
